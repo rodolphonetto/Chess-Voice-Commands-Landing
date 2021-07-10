@@ -10,49 +10,57 @@
   <script src="https://kit.fontawesome.com/b768935bed.js" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap" rel="stylesheet">
   <title>Chess voice commands - Jogue xadrez no chess.com por comandos de voz</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+  <link rel="manifest" href="images/site.webmanifest">
 </head>
 <body>
   <div class="container">
+    <img class="chess-icon" src="images/icon.png" alt="Ícone do Chess Voice Commands">
     <h1>Chess Voice Commands</h1>  
   </div>
   <header class="header">
-    <div>
+    <div class="icon-text-box">
       <i class="fas fa-chess-king icon-top"></i>
       <span class="icon-top-text">Lances por comando de voz</span>
     </div>
-    <div>
+    <div  class="icon-text-box">
       <i class="fas fa-chess-queen icon-top"></i>
-      <span class="icon-top-text">Leitura de lances em voz alta</span>
+      <span class="icon-top-text icon-top-text-q">Leitura de lances em voz alta</span>
     </div>
-    <div>
+    <div  class="icon-text-box">
       <i class="fas fa-chess-knight icon-top"></i>
       <span class="icon-top-text">Aviso sonoro de lances inválidos</span>
     </div>
   </header>
-  <p class="video-container">
-    <iframe width="720" height="480" src="https://www.youtube.com/embed/P5RQl5Np5T8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+  <div class="video-container">
+    <iframe src="https://www.youtube.com/embed/P5RQl5Np5T8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
     </iframe>
-  </p>
-  <div class="downloads-container">
-    <div>
-      <i class="fas fa-chess-pawn icon-top"></i>
-      <span class="icon-top-text">Download Chess Voice Commands Desktop</span>
-    </div>
-    <div>
-      <i class="fas fa-chess-pawn icon-top"></i>
-      <span class="icon-top-text">Download Chess Voice Commands Extensão</span>
-    </div>
   </div>
   <div class="infos-container">
     <div class="info-box">
       <i class="fas fa-chess icon-top"></i>
       <span class="icon-top-text">Como instalar</span><br><br>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, ipsa. Illo perferendis, alias expedita reiciendis sint nemo eaque, dolore dignissimos voluptas consectetur debitis aliquam nisi culpa. Hic animi quo assumenda.
+        Primeiro faça o download do programa <a href="https://chessvoicecommands.netlify.app/ChessVoiceCommands.zip"> "Chess Voice Commands Desktop" clicando aqui</a> após baixar o arquivo, apenas extraia o arquivo .zip e execute o arquivo "Chess Voice Commands.exe" lembre-se de já estar com o microfone ligado e funcionando, após isso já pode testar o funcionando do mesmo dizendo "Roque pequeno" para ver se o lance aparece na tela como na imagem abaixo<br><br>
+        <img src="images/demo-image-1.jpg" alt="Imagem exemplo mostrando um lance realizado">
     </div>
     <div class="info-box">
       <i class="fas fa-chess-board icon-top"></i>
       <span class="icon-top-text">Como usar</span><br><br>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, ipsa. Illo perferendis, alias expedita reiciendis sint nemo eaque, dolore dignissimos voluptas consectetur debitis aliquam nisi culpa. Hic animi quo assumenda.
+      <p>A leitura em voz alta dos lances e dos lances inválidos é feita automaticamente pela extensão, após sua instalação não precisa ser feito mais nada.</p>
+      <p>Os comandos de voz funcionam da seguinte maneira, fale o nome da peça que vai se mover, a letra representando a coluna e o número que representa a linha, por exemplo: <b>Cavalo César 3</b> representa <b>Cc3</b></p>
+      <ul>
+        <li>Lance de peça: <b>Bispo Davi 3</b> >  <b>Bd3</b></li>
+        <li>Captura de peça: <b>Torre Héctor 2</b> > <b>Txh2</b> Se houver peça na casa destino ela é capturada automaticamente</li>
+        <li>Lances de peões: <b>Ana 4</b> > <b>a4</b></li>
+        <li>Capturas de peões: <b>Ana Bela</b> 4 > <b>axb4</b></li>
+        <li>Lances ambiguos: <b>Torre Ana Eva 5</b> > <b>Tae5</b> Quando mais de uma peça igual pode ir para a mesma casa</li>
+        <li>Promoção: <b>Ana 8 promove Dama</b> > <b>a8=D</b> Diga o lance de promoção seguido de "promove peça" (Dama no caso)</li>
+        <li>Promoção com captura: <b>Ana Bela 8 promove Dama</b> > <b>a8=D</b> Diga o lance de promoção seguido de "promove peça" (Dama no caso) peão da coluna A captura em b8 promovendo dama</li>
+        <li>Roques: <b>Roque Pequeno</b> > <b>O-O</b> | <b>Roque Grande</b> > <b>O-O-O</b></li>
+        <li>Limpar o campo: <b>Cancela</b> > Limpa o campo</li>
+      </ul> 
     </div>
   </div>
 </body>

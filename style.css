@@ -1,46 +1,101 @@
+html, body, div, span, applet, object, iframe,
+ h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+ u, center,
+dl, dt, dd,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+  box-sizing: border-box;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
 body {
     font-family: 'Montserrat';
-    background-color: rgb(252, 255, 234)
+    background-color: rgb(252, 255, 234);
+    line-height: 30px;
+    width:100%;
 }
 
 h1 {
-  margin-bottom: 60px;
+  align-self: center;
+  margin-left: 20px;
+}
+
+li {
+  margin-bottom: 25px;
+}
+
+img {
+  max-width:100%;
 }
 
 .container {
   display: flex;
   justify-content: center;
-  align-items: center;
+  margin-bottom: 60px;
 }
 
 .header {
   margin: 0 auto;
   display:flex;
   justify-content: space-between;
-  max-width: 80%;
+  max-width:70%;
 }
 
 .icon-top {
-  color: #38a138;
+  color: #799756;
   margin-right: 10px;
   font-size: 36px;
 }
 
 .icon-top-text {
   font-size: 18px;
+  font-weight: bold;
 }
 
 .video-container {
   display:block;
   text-align:center;
   margin-top: 60px;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
 }
 
 .downloads-container {
   margin: 0 auto;
   display:flex;
-  justify-content: space-evenly;
+  justify-content: center;
   max-width: 80%;
   margin-bottom: 60px;
 }
@@ -49,11 +104,104 @@ h1 {
   margin: 0 auto;
   display:flex;
   flex-direction: column;
-  max-width: 80%;
+  max-width: 60%;
   margin-top: 40px;
   margin-bottom: 60px;
 }
 
 .info-box {
   margin-bottom: 60px;
+}
+
+.video-container {
+  overflow: hidden;
+  position: relative;
+  width:50%;
+  margin: 0 auto;
+  margin-top: 80px;
+}
+
+.video-container::after {
+  padding-top: 56.25%;
+  display: block;
+  content: '';
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 1360px)
+{
+  .header {
+    margin: 0 auto;
+    display:flex;
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 1200px)
+{
+  .header {
+    margin: 0 auto;
+    display:flex;
+    max-width: 90%;
+  }
+
+  .video-container {
+    width: 70%;
+  }
+}
+
+@media (max-width: 978px)
+{
+  .header {
+    margin: 0 auto;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .icon-text-box {
+    margin-bottom: 20px;
+  }
+
+  .icon-top-text-q {
+    margin-left: -3px;
+  }
+
+  .video-container {
+    margin-top: 40px;
+    width: 70%;
+  }
+}
+
+@media (max-width: 790px)
+{
+  .infos-container {
+    max-width: 80%;
+  }
+  h1 {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 506px)
+{
+  .container {
+    flex-direction: column;
+  }
+
+  h1 {
+    margin-left: 0px;
+  }
+
+  .chess-icon {
+    max-width:20%;
+    margin: 0 auto;
+  }
 }
