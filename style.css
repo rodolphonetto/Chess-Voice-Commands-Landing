@@ -61,6 +61,12 @@ img {
   max-width:100%;
 }
 
+.chess-icon {
+  max-width:30%;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
 .container {
   display: flex;
   justify-content: center;
