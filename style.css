@@ -161,6 +161,10 @@ img {
   .video-container {
     width: 70%;
   }
+
+  .chess-icon {
+    max-width:50%;
+  }
 }
 
 @media (max-width: 978px)
@@ -183,6 +187,10 @@ img {
   .video-container {
     margin-top: 40px;
     width: 70%;
+  }
+
+  .chess-icon {
+    max-width:70%;
   }
 }
 
@@ -207,7 +215,6 @@ img {
   }
 
   .chess-icon {
-    max-width:20%;
-    margin: 0 auto;
+    max-width:80%;
   }
 }
